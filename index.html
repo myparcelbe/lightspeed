@@ -27,6 +27,7 @@
     <!--<a target="_blank" class="btn" href="https://github.com/myparcelnl/Magento1">View on GitHub</a>-->
 </section>
 <section class="main-content">
+    <h3 style="color:red;">"Let op: Deze plugin communiceert alleen met het nieuwe platform van SendMyParcel. Heb je eerder gebruik gemaakt van een oudere versie? Dan is een nieuwe API-key noodzakelijk. <br><br> Deze is hier: <a href="https://backoffice.sendmyparcel.be/settings" target="blank">https://backoffice.sendmyparcel.be/settings"</a> op te vragen.</h3>
     <h1>Instructie Lightspeed plug-in</h1>
     <p>
         In deze handleiding wordt uitgelegd hoe je de Lightspeed koppeling met MyParcel kunt installeren en hoe deze koppeling werkt.
@@ -43,16 +44,12 @@
         <h1 id="1">1 Instructie Lightspeed plug-in</h1>
         <h2 id="1_1">1.1 De configuratie</h2>
         <p>Het is belangrijk dat je de MyParcel module eerst configureert. Nadat je gekozen hebt voor <span class="nice">Installeer app</span> kom je op de volgende configuratiepagina:</p>
-        <img src="media/1.png" alt="De configuratie"><br>
-        <p>
-            <small>Note: in bovenstaande voorbeeld is de introductietekst anders. De app is hier al geïnstalleerd.</small>
-        </p>
+         <img src="media/1.png" alt="De configuratie"><img src="media/2.png" alt="De configuratie"><br>
         <ol>
-            <li>Bij <span class="nice">MyParcel gebruikersnaam</span> vul je jouw gebruikersnaam van MyParcel in.</li>
-            <li>Bij <span class="nice">MyParcel API-key</span> kun je de API key invullen. Je kunt deze bij MyParcel aanvragen via <a href='mailto:info@sendmyparcel.be'> info@sendmyparcel.be</a> of onder <span class="nice">Instellingen → Algemeen</span> in MyParcel.</li>
+            <li>Bij <span class="nice">API Sleutel</span> kun je de API key invullen. Je kunt deze bij MyParcel aanvragen via <a href='mailto:info@sendmyparcel.be'> info@sendmyparcel.be</a> of onder <span class="nice">Instellingen → Algemeen</span> in MyParcel.</li>
             <li>
                 Vervolgens dien je aan te geven hoe je de koppeling wilt gebruiken
-                <img src="media/2.png" alt="Doorsturen naar MyParcel" style="max-width: 350px">
+                
                 <br><br>
                 Je kunt zelf bepalen wanneer je de orderdata naar MyParcel wilt versturen. Je hebt daarvoor een tweetal mogelijkheden:<br><br>
                 <ul>
@@ -70,26 +67,30 @@
                 <br>
             </li>
             <li>
-                <p>Vervolgens kun je aangeven of je de zendingen in MyParcel direct wilt verwerken, of dat je dit handmatig in MyParcel doet.</p>
-                <p>
-                    <img src="media/4.png" alt="handmatig MyParcel" style="max-width: 250px;">
-                </p>
+                Vervolgens kun je aangeven of  het gewenst om direct na importeren een Track & Trace code te generen in MyParcel België?
+            </li>
+            <br>
+            <li>
+                De zendingen worden als standaard zending geïmporteerd. Indien gewenst is het mogelijk deze uit te breiden met één van de volgende opties:
+                <br><br>
                 <ul>
                     <li>
-                        <b>Direct verwerken</b><br>
-                        Deze optie zorgt ervoor dat de, in MyParcel geïmporteerde, order ook direct wordt verwerkt. De zending wordt verwerkt met de gekozen standaard verzendwijze. Lastige van deze optie is, dat je naderhand geen aanvullende verzendopties meer kunt kiezen.
-                    </li>
-                    <li>
-                        <b>Niet direct verwerken (aanbevolen)</b><br>
-                        Het spreekt voor zich dat bij deze optie de zendingen in MyParcel niet direct worden verwerkt. Wanneer je voor deze optie kiest, heeft je meer flexibiliteit. JE kunt in dit geval later nog verzendopties toevoegen of wijzigen.
-                    </li>
+                    <b>Standaard verzending</b>
+                </li>
+                <li>
+                    <b>Handtekening voor ontvangst</b>
+                </li>
+                <li>
+                    <b>handtekening vereist & verzekerd voor €500</b>
+                </li>
                 </ul>
+
             </li>
         </ol>
 
         <h2 id="1_2">1.2 Het wijzigen van de verzendmethode(n)</h2>
         <p>
-            <img src="media/5.png" alt="" style="float: right">
+            <img src="media/5.png" alt="" style="float: right" ">
             Ga in jouw Lightspeed backend naar <span class="nice">Algemeen → Instellingen → Verzendmethoden</span>. Hier kun je de Bpost verzendmethode configureren.
 
         </p>
@@ -148,7 +149,7 @@
 
         <h1 id="3">3 Hulp nodig?</h1>
         <p>
-            Indien je vragen hebt over de installatie of het gebruik van de plug-in, helpen wij je graag. Ook tips & suggesties voor verbetering van de (werking) van de plug-in, horen wij graag. Mail support@sendmyparcel.be of bel: 023 30 30 315.
+            Indien je vragen hebt over de installatie of het gebruik van de plug-in, helpen wij je graag. Ook tips & suggesties voor verbetering van de (werking) van de plug-in, horen wij graag. Mail support@sendmyparcel.be of bel: 03 808 18 20.
         </p>
 
 
