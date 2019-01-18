@@ -1,0 +1,131 @@
+<script src="js/auto_menu.js"></script>
+<section class="page-header">
+    <p>
+        <img alt="" src="media/MyParcel_Belgie.png"/>
+        <img src="media/logo.png" style="margin-bottom: 20px;height: 150px;"/>
+    </p>
+    <h1 class="project-name">Manuel d’installation utilisateur</h1>
+    <h2 class="project-tagline">Plug-in Lightspeed MyParcel BE</h2>
+    <a target="_blank" class="btn" href="https://github.com/myparcelbe/lightspeed">GitHub</a>
+    <a target="_blank" class="btn" href="https://github.com/myparcelbe/lightspeed/releases">Toutes les mises à jour</a>
+    <a target="_blank" class="btn" href="https://github.com/myparcelbe/lightspeed/archive/master.zip">Dernière version stable</a>
+</section>
+<section class="main-content">
+    <h1>Instructions plug-in Lightspeed</h1>
+    <p>Ce manuel vous explique comment réaliser le couplage de Lightspeed avec MyParcel. Il présente également le fonctionnement de ce couplage.</p>
+    <p>
+        Vous trouverez l’application MyParcel BE dans l’<span class="nice">App Store</span> de Lightspeed. Choisissez d’<span class="nice">installer l’application</span>. L'application proposée par MyParcel est gratuite. Pour pouvoir l’utiliser, vous devez être client chez MyParcel. Si vous n’êtes pas encore client, vous pouvez vous inscrire sans engagement via le lien suivant :
+        <a href="https://www.sendmyparcel.be/nl-be/registreren" target="_blank">www.sendmyparcel.be/nl-be/registreren</a>.
+    </p>
+
+    <h1>Sommaire</h1>
+    <div class="menu"></div>
+    <div>
+        <h1 id="1">1 Instructions plug-in Lightspeed</h1>
+        <h2 id="1_1">1.1 Configuration</h2>
+        <p>Il est important que vous configuriez d’abord le module MyParcel. Après avoir choisi <span class="nice">Installer l’application</span>, vous serez transféré sur la page de configuration suivante:</p>
+        <img src="media/1.png" alt="De configuratie"><img src="media/2.png" alt="De configuratie"><br>
+        <ol>
+            <li>Introduisez la <span class="nice">clé API</span> sous ‘Clé API’. Vous pouvez en faire la demande auprès de MyParcel à l’adresse<a href='mailto:info@sendmyparcel.be'> info@sendmyparcel.be</a> ou sous <span class="nice">Paramètres → Général</span> dans MyParcel.</li>
+            <li>
+                Vous devez ensuite spécifier comment vous souhaitez utiliser le couplage. <br><br>
+                Vous pouvez vous-même choisir quand vous souhaitez envoyer les données de commande à MyParcel. A cet égard, vous avez deux options: <br><br>
+                <ul>
+                    <li>
+                        <b>Orders met status <span class="nice">Non envoyé</span> (conseillé)</b><br>
+                        Lorsque vous optez pour un transfert des <span class="nice">commandes avec le statut ‘Non envoyé’ (conseillé)</span>, toutes les commandes avec ce statut sont envoyées directement à MyParcel. Comme toutes les nouvelles commandes dans Lightspeed reçoivent automatiquement le statut ‘Non envoyé’, ce sont toutes vos commandes qui seront donc placées dans MyParcel. <span class="nice">Attention.</span> Cela peut prendre jusqu’à 15 minutes. Vous ne devez donc rien faire pour importer vos commandes dans MyParcel.
+                    </li>
+                    <li>
+                        <b>Commandes avec le statut  <span class="nice">Envoyé</span></b><br>
+                        Lorsque vous optez pour un <span class="nice"> transfert des commandes avec le statut ‘Envoyé’</span>, les commandes sont placées dans MyParcel dès que vous spécifiez manuellement dans votre interface Lightspeed que ces commandes sont <span class="nice">Envoyées</span> Vous pouvez le faire en cochant les commandes et en choisissant <span class="nice">Marquer comme envoyé</span> en haut à droite.
+                        <img src="media/3.png" alt="Order met status verzonden">
+                        Après cela, les commandes seront visibles dans MyParcel dans un délai de 15 minutes. Il se peut que des commandes soient affichées deux fois dans MyParcel si vous avez donné un autre statut à vos commandes et les avez ensuite marquées comme <span class="nice">Envoyées</span> alors qu’elles étaient déjà marquées comme telles.
+                    </li>
+                </ul><br>
+            </li>
+            <li>Vous pouvez ensuite indiquer si vous souhaitez générer directement un code Track & Trace dans MyParcel Belgique après importation.</li><br>
+            <li>
+                Les envois sont importés en tant qu’envois standards. Si vous le souhaitez, il est possible de les compléter par l’une des options suivantes:  <br><br>
+                <ul>
+                    <li>
+                        <b>Envoi standard</b>
+                    </li>
+                    <li>
+                        <b>Signature pour réception</b>
+                    </li>
+                    <li>
+                        <b>Signature requise et assurance pour 500 €</b>
+                    </li>
+                </ul>
+
+            </li>
+        </ol>
+
+        <h2 id="1_2">1.2 Modification du ou des modes d’expédition</h2>
+        <p>
+            <img src="media/5.png" alt="" style="float: right">
+            Rendez-vous dans votre interface Lightspeed sur <span class="nice">Général → Paramètres → Modes d’expédition</span>. Vous pouvez configurer ici le mode d’expédition par bpost.
+        </p>
+        <p>
+            <b>Activer l’intégration </b><br>
+            Dans <span class="nice">Information de connexion</span>, vous pouvez activer le mode d’expédition. Les autres champs tels que le numéro de client, le code client, le code lieu, l’identifiant et le mot de passe peuvent rester vides. Définissez le ‘Mode’ sur <span class="nice">live</span>.<br>
+            <img src="media/6.png" alt=""><br><br>
+
+            <b>Paramétrer le mode d’expédition </b><br>
+            Vous pouvez indiquer ici les options d'expédition que vous souhaitez afficher sur votre boutique en ligne.
+        <ul>
+            <li>Bpack@home: Envoi à l'adresse d’expédition du client</li>
+            <li>Bpack@bpost: Envoi à un point de livraison postale (collecte)</li>
+        </ul>
+        <img src="media/verzendmethoden1.png" alt=""><br><br>
+
+        <b>Adresse de l’expéditeur</b><br>
+        Introduisez ici l’adresse d’expéditeur de votre boutique en ligne.<br>
+        <img src="media/Afzenderadres.png" alt=""><br><br>
+
+        <b>Prix</b><br>
+        Indiquez ici les prix et le lieu de livraison de votre boutique en ligne.  <br>
+        <img src="media/prijzen.png" alt=""><br><br>
+        </p>
+
+        <h2 id="1_3">1.3 Création des étiquettes</h2>
+        <p>Après avoir donné les bons titres aux modes d’expédition et configuré le module MyParcel selon vos souhaits, vous pouvez commencer à traiter les commandes. Pour ce faire, rendez-vous dans l’interface dans <br><span class="nice">Commandes</span>.</p>
+        <p>Si vous avez opté pour le transfert des <span class="nice">commandes ayant le statut ‘Non envoyé’</span>, vous ne devrez plus rien faire dans Lightspeed. Lorsque vous recevez une nouvelle commande, celle-ci est automatiquement placée dans MyParcel dans les 15 minutes. Vous pouvez cocher ces commandes dans MyParcel, les traiter et / ou les imprimer.</p>
+        <p>Si vous avez choisi de transférer les <span class="nice">commandes avec le statut ‘Envoyé’</span>, vous pouvez alors cocher, dans votre interface Lightspeed, les commandes que vous souhaitez envoyer via MyParcel.</p>
+
+        <img src="media/7.png" alt="">
+        <p>Après adaptation du statut, la commande est placée dans MyParcel dans les 15 minutes. Vous pouvez cocher cette ou ces commandes dans MyParcel, les traiter et / ou les imprimer.</p>
+        <p><span class="nice">Attention.</span> Vu que nous ne pouvons pas adresser un nombre trop important de requêtes à Lightspeed, les envois créés sont répercutés auprès de Lightspeed et importés dans MyParcel périodiquement. L’affichage de vos envois dans MyParcel peut donc prendre un certain temps. Après avoir traité les envois dans MyParcel, le code 3S est ajouté à la commande après 2 heures au maximum. Vous ne devez donc plus le faire manuellement.</p>
+
+        <h2 id="1_4">1.4 E-mail Track & Trace</h2>
+        <p>Si vous choisissez d'envoyer l'e-mail Track & Trace depuis Lightspeed, vous pouvez désactiver cette fonction dans MyParcel sous <span class="nice">Paramètres → Track & Trace</span> Si vous préférez envoyer l’e-mail Track & Trace depuis MyParcel, vous pouvez désactiver l’e-mail ‘Order Track & Trace code’. Pour ce faire, laissez le titre et le contenu vides.</p>
+        <h2 id="1_5">1.5 Multishop</h2>
+        <p>Si vous disposez de plusieurs boutiques en ligne liées à un seul compte Ligthspeed, vous devrez les configurer individuellement. Sélectionnez la boutique appropriée et répétez les étapes pour configurer l’application, comme indiqué précédemment sous <span class="nice">App store → acheter l’app → installer l’app</span>. Répétez ces étapes pour chaque boutique séparément.</p>
+
+        <h1 id="2">2 Si vous utilisez l’expédition gratuite au-dessus d’un certain montant</h1>
+        <p>Pour utiliser cette option, le module bpost doit être activé. Vous devrez alors paramétrer le module comme suit:</p>
+        <ol>
+            <li>Rendez-vous dans <span class="nice">Paramètres → Modes d’expédition → bpost → Prix</span></li>
+            <li>Dans <span class="nice">Prix</span>, choisissez le bon mode d’expédition ‘Envoi standard bpost’</li>
+            <li>Activer <span class="nice">Enable this pricing</span>.</li>
+            <li>Introduisez la valeur de la commande pour laquelle vous proposez une livraison gratuite.</li>
+            <li>Définissez la taxe à 21%.</li>
+            <li>Revérifiez les prix.</li>
+            <li>Choisissez <span class="nice">Enregistrer</span>.</li>
+        </ol>
+
+        <h1 id="3">3 Besoin d’aide?</h1>
+        <p>Si vous avez des questions concernant l’installation ou l’utilisation du plug-in, n’hésitez pas à nous contacter. Vos conseils et suggestions en vue d’améliorer le fonctionnement du plug-in sont également les bienvenus. Envoyez-nous un e-mail à support@sendmyparcel ou téléphonez au 03 808 18 20.</p>
+    </div>
+    <footer class="site-footer">
+        <p><span class="site-footer-owner">MyParcel Belgique</span></p>
+        <p>
+            <span class="site-footer-credits">
+                <strong>Adresse </strong>Adriaan Brouwerstraat 16, 2000 Antwerpen&nbsp;
+                <strong>Téléphone </strong>03 808 18 20&nbsp;
+                <strong>E-mail</strong> &nbsp;info@sendmyparcel.be<br/>
+                <strong>Site internet </strong>www.sendmyparcel.be&nbsp;
+            </span><br/>&nbsp;
+        </p>
+    </footer>
+</section>

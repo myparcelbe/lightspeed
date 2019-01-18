@@ -1,0 +1,135 @@
+<script src="js/auto_menu.js"></script>
+<section class="page-header">
+    <p>
+        <img alt="" src="media/MyParcel_Belgie.png"/>
+        <img src="media/logo.png" style="margin-bottom: 20px;height: 150px;"/>
+    </p>
+    <h1 class="project-name">Installatie- gebruikershandleiding</h1>
+    <h2 class="project-tagline">Lightspeed MyParcel BE plug-in</h2>
+    <a target="_blank" class="btn" href="https://github.com/myparcelbe/Lightspeed">GitHub</a>
+    <a target="_blank" class="btn" href="https://github.com/myparcelbe/Lightspeed/releases">Alle updates</a>
+    <a target="_blank" class="btn" href="https://github.com/myparcelbe/Lightspeed/archive/master.zip">Laatste stabiele versie</a>
+</section>
+<section class="main-content">
+    <h1>Instructie Lightspeed plug-in</h1>
+    <p>In deze handleiding wordt uitgelegd hoe je de Lightspeed koppeling met MyParcel kunt installeren en hoe deze koppeling werkt.</p>
+    <p>
+        In de <span class="nice">App Store</span> van Lightspeed kun je de MyParcel BE app vinden. Je kunt hier kiezen voor <span class="nice">installeer app</span>. De app wordt aangeboden door MyParcel, deze is kosteloos. Om gebruik te kunnen maken van de app dien je klant te zijn bij MyParcel. Wanneer je nog geen klant bent, kun je vrijblijvend registreren via de volgende link:
+        <a href="https://www.sendmyparcel.be/nl-be/registreren" target="_blank">www.sendmyparcel.be/nl-be/registreren</a>.
+    </p>
+
+    <h1>Inhoud</h1>
+    <div class="menu"></div>
+    <div>
+        <h1 id="1">1 Instructie Lightspeed plug-in</h1>
+        <h2 id="1_1">1.1 De configuratie</h2>
+        <p>Het is belangrijk dat je de MyParcel module eerst configureert. Nadat je gekozen hebt voor <span class="nice">Installeer app</span> kom je op de volgende configuratiepagina:</p>
+        <img src="media/1.png" alt="De configuratie"><img src="media/2.png" alt="De configuratie"><br>
+        <ol>
+            <li>Bij <span class="nice">API Sleutel</span> kun je de API key invullen. Je kunt deze bij MyParcel aanvragen via <a href='mailto:info@sendmyparcel.be'> info@sendmyparcel.be</a> of onder <span class="nice">Instellingen → Algemeen</span> in MyParcel.</li>
+            <li>
+                Vervolgens dien je aan te geven hoe je de koppeling wilt gebruiken<br><br>
+                Je kunt zelf bepalen wanneer je de orderdata naar MyParcel wilt versturen. Je hebt daarvoor een tweetal mogelijkheden:<br><br>
+                <ul>
+                    <li>
+                        <b>Orders met status <span class="nice">Niet verzonden</span> (aanbevolen)</b><br>
+                        Wanneer je kiest voor doorsturen van <span class="nice">Orders met status ‘Niet verzonden’ (aanbevolen)</span>, worden alle orders met status Niet verzonden direct naar MyParcel gestuurd. Omdat alle nieuwe orders binnen Lightspeed automatisch de status Niet verzonden hebben, worden al jouw orders in Myparcel gezet. <span class="nice">Let op.</span> Dit kan soms tot 15 minuten duren. Je hoeft dus niets te doen om jouw orders in MyParcel te importeren.
+                    </li>
+                    <li>
+                        <b>Orders met status <span class="nice">Verzonden</span></b><br>
+                        Wanneer je kiest voor doorsturen van <span class="nice">Orders met status ‘Verzonden’</span>, worden alle orders in MyParcel gezet zodra je de order in jouw Lightspeed backend handmatig op <span class="nice">verzonden</span> zet. Je kunt dit doen door de orders aan te vinken en rechtsboven voor <span class="nice">Markeer als verzonden</span> te kiezen.
+                        <img src="media/3.png" alt="Order met status verzonden">
+                        Nadat je dit hebt gedaan, zullen de orders binnen 15 minuten in MyParcel zichtbaar zijn. Het kan zijn dat orders dubbel in MyParcel komen te staan indien je orders, nadat ze de status <span class="nice">Verzonden</span> hebben, een andere status geeft en vervolgens opnieuw op <span class="nice">Verzonden</span> zet.
+                    </li>
+                </ul><br>
+            </li>
+            <li>Vervolgens kun je aangeven of  het gewenst om direct na importeren een Track & Trace code te generen in MyParcel België?</li><br>
+            <li>
+                De zendingen worden als standaard zending geïmporteerd. Indien gewenst is het mogelijk deze uit te breiden met één van de volgende opties:
+                <br><br>
+                <ul>
+                    <li>
+                        <b>Standaard verzending</b>
+                    </li>
+                    <li>
+                        <b>Handtekening voor ontvangst</b>
+                    </li>
+                    <li>
+                        <b>handtekening vereist & verzekerd voor €500</b>
+                    </li>
+                </ul>
+
+            </li>
+        </ol>
+
+        <h2 id="1_2">1.2 Het wijzigen van de verzendmethode(n)</h2>
+        <p>
+            <img src="media/5.png" alt="" style="float: right">
+            Ga in jouw Lightspeed backend naar <span class="nice">Algemeen → Instellingen → Verzendmethoden</span>. Hier kun je de Bpost verzendmethode configureren.
+        </p>
+
+        <p>
+            <b>Integratie inschakelen</b><br>
+            Bij de <span class="nice">login information</span> kun je de verzendmethode inschakelen.
+            Overige velden zoals klantnummer, klantcode, locatiecode, gebruikersnaam en wachtwoord kunt je leeg laten. Zet de Mode op <span class="nice">live</span>.<br>
+            <img src="media/6.png" alt=""><br><br>
+
+            <b>Verzendmethode instellen</b><br>
+            Hier kan je aangeven welk verzendopties je wilt tonen in je webshop.
+
+            <ul>
+                <li>Bpack@home: Verzending naar klant zijn verzendadres</li>
+                <li>Bpack@bpost: Verzending naar post delivery point (Afhalen)</li>
+            </ul>
+            <img src="media/verzendmethoden1.png" alt=""><br><br>
+
+            <b>Afzenderadres</b><br>
+            Vul hier het afzenderadres van jouw webshop.<br>
+            <img src="media/Afzenderadres.png" alt=""><br><br>
+
+            <b>Prijzen</b><br>
+            Stel hier de prijzen en locatie van bezorging voor je webshop.<br>
+            <img src="media/prijzen.png" alt=""><br><br>
+        </p>
+
+        <h2 id="1_3">1.3 Het aanmaken van de labels</h2>
+        <p>Nadat de verzendmethoden de juiste titels hebben en de MyParcel module naar wens is geconfigureerd, kun je orders gaan verwerken. Je gaat hiervoor in de back-office naar <br><span class="nice">Orders</span>.</p>
+        <p>Indien je hebt gekozen voor doorsturen van <span class="nice">Orders met status Niet verzonden</span>, hoef je in Lightspeed niets te doen. Wanneer je een nieuwe order binnen krijgt, wordt deze binnen 15 minuten automatisch in MyParcel gezet. Je kunt deze zendingen in MyParcel aanvinken en verwerken en/of printen.</p>
+        <p>Indien je hebt gekozen voor het doorsturen van <span class="nice">Orders met status Verzonden</span>, dan kun je in jouw Ligthspeed backend de orders aanvinken die je wilt gaan versturen via MyParcel.</p>
+
+        <img src="media/7.png" alt="">
+        <p>Na het aanpassen van de status wordt de order binnen 15 minuten in MyParcel gezet. Je kunt deze zending(en) in MyParcel aanvinken en verwerken en/of printen.</p>
+        <p><span class="nice">Let op.</span> Omdat wij niet teveel requests mogen doen bij Lightspeed, worden de aangemaakte verzendingen periodiek bij Lightspeed opgevraagd en in MyParcel geïmporteerd. Het kan dus even duren voordat jouw verzendingen in MyParcel zichtbaar zijn. Nadat je de verzendingen hebt verwerkt in MyParcel wordt na maximaal 2 uur ook de 3S code aan de order toegevoegd. Je hoeft dit dus niet meer handmatig te doen.</p>
+
+        <h2 id="1_4">1.4 Track & Trace mail</h2>
+        <p>Indien je er voor kiest om de Track & Trace mail vanuit Lightspeed te versturen, kun je deze functie in MyParcel onder <span class="nice">Instellingen → Track & Trace</span> uitzetten. Indien je er voor kiest om de Track & Trace mail vanuit MyParcel te versturen, kun je de email ‘Order track&trace code’ deactiveren. Dit doet je door de titel en de inhoud leeg te maken.</p>
+        <h2 id="1_5">1.5 Multishop</h2>
+        <p>Indien je meerdere webwinkels hebt onder één Ligthspeed account, dan moet je deze elk apart configureren. Selecteer de juiste store en herhaal de stappen om de app te configureren zoals eerder uitgelegd onder <span class="nice">App store → koop app → installeer app</span>. Herhaal deze stappen voor iedere store afzonderlijk</p>
+
+        <h1 id="2">2 Indien je gebruik maakt van gratis verzending boven een bepaald bedrag</h1>
+        <p>Om gebruik te maken van deze mogelijkheid, moet de Bpost module geactiveerd zijn. Vervolgens dien je deze module als volgt in te stellen:</p>
+        <ol>
+            <li>Ga naar <span class="nice">Instellingen → Verzendmethoden → Bpost → Prijzen</span></li>
+            <li>Kies bij <span class="nice">Prijzen</span> de juiste verzendmethode Bpost Standaard Verzending.</li>
+            <li>Activeer <span class="nice">Enable this pricing</span>.</li>
+            <li>Voer de orderwaarde in waarbij je gratis verzending aanbiedt.</li>
+            <li>Zet de belasting op 21%.</li>
+            <li>Controleer de prijzen nogmaals.</li>
+            <li>Kies voor <span class="nice">Opslaan</span>.</li>
+        </ol>
+
+        <h1 id="3">3 Hulp nodig?</h1>
+        <p>Indien je vragen hebt over de installatie of het gebruik van de plug-in, helpen wij je graag. Ook tips & suggesties voor verbetering van de (werking) van de plug-in, horen wij graag. Mail support@sendmyparcel.be of bel: 03 808 18 20.</p>
+    </div>
+    <footer class="site-footer">
+        <p><span class="site-footer-owner">MyParcel België</span></p>
+        <p>
+            <span class="site-footer-credits">
+                <strong>Adres </strong>Adriaan Brouwerstraat 16, 2000 Antwerpen&nbsp;
+                <strong>Telefoon </strong>03 808 18 20&nbsp;
+                <strong>E-mail</strong> &nbsp;info@sendmyparcel.be<br/>
+                <strong>Website </strong>www.sendmyparcel.be&nbsp;
+            </span><br/>&nbsp;
+        </p>
+    </footer>
+</section>
